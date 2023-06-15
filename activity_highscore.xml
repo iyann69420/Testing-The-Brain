@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/high_score_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/high_score_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundd"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back_button_start_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/high_score_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Scores"
+            android:textSize="36sp"
+            android:textColor="#39FF14"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/high_score_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#39FF14"
+                android:padding="16dp"
+                android:textSize="27sp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
